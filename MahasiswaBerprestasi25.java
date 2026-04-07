@@ -18,7 +18,6 @@ public class MahasiswaBerprestasi25 {
         }
     }
 
-    // BUBBLE SORT (DESC)
     void bubbleSort() {
         for (int i = 0; i < listMhs.length - 1; i++) {
             for (int j = 1; j < listMhs.length - i; j++) {
@@ -31,7 +30,6 @@ public class MahasiswaBerprestasi25 {
         }
     }
 
-    // SELECTION SORT (ASC)
     void SelectionSort() {
         for (int i = 0; i < listMhs.length - 1; i++) {
             int idxMin = i;
@@ -47,16 +45,16 @@ public class MahasiswaBerprestasi25 {
     }
 
     void insertionSort() {
-    for (int i = 1; i < listMhs.length; i++) {
-        Mahasiswa25 temp = listMhs[i];
-        int j = i;
+        for (int i = 1; i < listMhs.length; i++) {
+            Mahasiswa25 temp = listMhs[i];
+            int j = i;
 
-        while (j > 0 && listMhs[j - 1].ipk < temp.ipk) {
-            listMhs[j] = listMhs[j - 1];
-            j--;
+            while (j > 0 && listMhs[j - 1].ipk < temp.ipk) {
+                listMhs[j] = listMhs[j - 1];
+                j--;
+            }
+
+            listMhs[j] = temp;
         }
-
-        listMhs[j] = temp;
     }
-}
 }

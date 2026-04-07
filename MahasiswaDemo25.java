@@ -22,7 +22,7 @@ public class MahasiswaDemo25 {
             System.out.print("IPK   : ");
             double ipk = 0;
 
-            // biar ga error kayak tadi
+            
             while (true) {
                 try {
                     ipk = sc.nextDouble();
